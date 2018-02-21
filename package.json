@@ -15,7 +15,7 @@
     "lint": "npm run lint:client && npm run lint:server",
     "lint:client": "tslint -c ./tslint.json './src/client/**/*.ts*'",
     "lint:server": "tslint -c ./tslint.json './src/server/**/*.ts'",
-    "precommit": "npm lint",
+    "precommit": "npm run lint",
     "prepush": "npm lint && npm run build",
     "restore": "npm i && echo 'WDS_PORT=7000' >.env && echo 'PORT=9000' >>.env"
   },
